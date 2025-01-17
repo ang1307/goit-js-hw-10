@@ -12,8 +12,7 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-      rollupOptions: { 
-      external: ['flatpickr'],
+      rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
           manualChunks(id) {
